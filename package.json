@@ -1,0 +1,22 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "1.0.0",
+  "description": "Solutions for Advent of Code 2022",
+  "main": "src/cli/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidivad96/advent-of-code-2022.git"
+  },
+  "author": "davidivad96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidivad96/advent-of-code-2022/issues"
+  },
+  "homepage": "https://github.com/davidivad96/advent-of-code-2022#readme",
+  "dependencies": {
+    "commander": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10"
+  }
+}
