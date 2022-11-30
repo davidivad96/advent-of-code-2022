@@ -20,7 +20,7 @@ Commands:
   help [command]              display help for command
 ```
 
-### Example
+### Example
 
 ```bash
 npx ts-node src/cli/index.ts new 1
