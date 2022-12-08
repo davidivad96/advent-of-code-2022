@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["ES2021.String"]
+    "lib": ["ES2021.String"],
+    "target": "ES2021"
   }
 }
