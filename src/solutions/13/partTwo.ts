@@ -1,4 +1,4 @@
-import { deepClone } from "../../utils";
+import { arraysAreEqual, deepClone } from "../../utils";
 import { Packet } from "./types";
 import { comparePackets } from "./utils";
 
@@ -9,11 +9,11 @@ export const partTwo = (input: Packet[][]) => {
   result.sort((a, b) =>
     comparePackets(deepClone(a as Packet[]), deepClone(b as Packet[]))
   );
-  const divider1Index = result.findIndex(
-    (packet) => JSON.stringify(packet) === JSON.stringify(divider1)
+  const divider1Index = result.findIndex((packet) =>
+    arraysAreEqual(packet as any[], divider1)
   );
-  const divider2Index = result.findIndex(
-    (packet) => JSON.stringify(packet) === JSON.stringify(divider2)
+  const divider2Index = result.findIndex((packet) =>
+    arraysAreEqual(packet as any[], divider2)
   );
   return (divider1Index + 1) * (divider2Index + 1);
 };

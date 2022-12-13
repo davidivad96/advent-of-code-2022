@@ -10,3 +10,6 @@ export const asciiDistance = (a: string, b: string) =>
   a.charCodeAt(0) - b.charCodeAt(0);
 
 export const deepClone = (arr: any[]) => JSON.parse(JSON.stringify(arr));
+
+export const arraysAreEqual = (a: any[], b: any[]) =>
+  JSON.stringify(a) === JSON.stringify(b);
