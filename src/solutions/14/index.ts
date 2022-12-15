@@ -10,10 +10,10 @@ const preprocess = (text: string) => {
         .reverse()
     )
   );
-  const maxX = Math.max(...paths.flat().map((path) => path[0]));
-  const maxY = Math.max(...paths.flat().map((path) => path[1])) + 500;
-  const cave = Array.from({ length: maxX + 1 }, () =>
-    Array.from({ length: maxY + 1 }, () => ".")
+  const nRows = Math.max(...paths.flat().map((path) => path[0]));
+  const nColumns = Math.max(...paths.flat().map((path) => path[1])) + 500;
+  const cave = Array.from({ length: nRows + 1 }, () =>
+    Array.from({ length: nColumns + 1 }, () => ".")
   );
   paths.forEach((path) => {
     path.forEach((coordinates, i, arr) => {
